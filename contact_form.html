@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS stylesheet -->
+  <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</head>
+<body>
+  <header>
+    <!-- Navigation and header content here -->
+  </header>
+  <main>
+    <section class="contact-form">
+      <h1>Contact Us</h1>
+      <form id="contactForm" onsubmit="return submitForm()">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="propertyType">Type of Property:</label>
+        <select id="propertyType" name="propertyType">
+          <option value="house">House</option>
+          <option value="condo">Condominium</option>
+        </select>
+        
+        <label for="bedrooms">Number of Bedrooms:</label>
+        <input type="number" id="bedrooms" name="bedrooms" required>
+        
+        <label for="bathrooms">Number of Bathrooms:</label>
+        <input type="number" id="bathrooms" name="bathrooms" required>
+        
+        <label for="priceRange">Price Range:</label>
+        <input type="text" id="priceRange" name="priceRange" required>
+        
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments"></textarea>
+        
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Local Real Estate Agent</p>
+  </footer>
+</body>
+</html>
