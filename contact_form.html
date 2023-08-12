@@ -8,42 +8,80 @@
   <script src="script.js"></script> <!-- Link to your JavaScript file -->
 </head>
 <body>
-  <header>
-    <!-- Navigation and header content here -->
+  <header class="header">
+    <div class="logo">
+      <img src="images/Company_logo.jpg" alt="Agent Logo" style="max-width: 150px; height: auto;">
+  </div>
+   <nav class="navbar">
+      <a href="index.html" class="nav-button">Home</a>
+      <a href="property1.html" class="nav-button">Property 1</a>
+      <a href="property2.html" class="nav-button">Property 2</a>
+      <a href="property3.html" class="nav-button">Property 3</a>
+      <a href="available_properties.html" class="nav-button">Available Properties</a>
+      <a href="contact_form.html" class="nav-button">Contact Us</a>
+      <a href="sitemap_credits.html" class="nav-button">Site Map and Credits</a>
+    </nav>
   </header>
   <main>
     <section class="contact-form">
-      <h1>Contact Us</h1>
+      <h1 class="header-text">Contact Us</h1>
       <form id="contactForm" onsubmit="return submitForm()">
-        <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" required>
+        <div class="form-row">
+          <div>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" class="form-control" required>
+            
+          </div>
+          <div>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName"  class="form-control" required>
+           
+          </div>
+           
+        </div>
+
+
+
+        <div class="form-row">
+          <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone"  class="form-control" required>
+            
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"  class="form-control"required>
+          </div>
+        </div>
+      </div>
         
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" required>
-        
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" required>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        
+       <div>
         <label for="propertyType">Type of Property:</label>
         <select id="propertyType" name="propertyType">
           <option value="house">House</option>
           <option value="condo">Condominium</option>
         </select>
+       </div>
         
-        <label for="bedrooms">Number of Bedrooms:</label>
-        <input type="number" id="bedrooms" name="bedrooms" required>
+       <div class="form-row">
+          <div>
+            <label for="bedrooms">Number of Bedrooms:</label>
+            <input type="number" id="bedrooms" name="bedrooms" class="form-control" required>
         
-        <label for="bathrooms">Number of Bathrooms:</label>
-        <input type="number" id="bathrooms" name="bathrooms" required>
+            
+          </div>
+          <div>
+            <label for="priceRange">Price Range:</label>
+            <input type="text" id="priceRange" name="priceRange" class="form-control" required>
+            
+          </div>
+        </div>
+      </div>
         
-        <label for="priceRange">Price Range:</label>
-        <input type="text" id="priceRange" name="priceRange" required>
+        
         
         <label for="comments">Additional Comments:</label>
-        <textarea id="comments" name="comments"></textarea>
+        <textarea id="comments" name="comments" rows="6"></textarea>
         
         <button type="submit">Submit</button>
       </form>
